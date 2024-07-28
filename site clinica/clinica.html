@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fisio.Coaching</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -56,52 +57,71 @@
             text-align: center;
             padding: 5px 0;
         }
+        .service-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .service-buttons a {
+            flex: 1 1 calc(33% - 20px);
+            min-width: 200px;
+            max-width: 300px;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .service-buttons a:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <header>
-        <br>
-        <br>
-        <br>
-        <br>
         <h1>Bem-vindo à Fisio.Coaching</h1>
     </header>
     <nav>
         <a href="#sobre-nos">Sobre Nós</a>
         <a href="#servicos">Serviços</a>
         <a href="#contato">Contato</a>
-        <a href="photos.html">Fotos</a> <!-- Link para fotos.html -->
-        <a href="artigo.html"> Artigos</a>
+        <a href="photos.html">Fotos</a> <!-- Link para photos.html -->
+        <a href="artigo.html">Artigos</a>
     </nav>
     <div class="container">
         <section id="sobre-nos">
-            <h2>Sobre nós</h2>
+            <h2>Sobre Nós</h2>
             <p>Há nove anos, surgiu a clínica Fisio.Coaching com a proposta de oferecer serviços de fisioterapia, pilates, estética e home care de uma forma individualizada e, principalmente, humanizada. Podemos afirmar com convicção que os clientes que adentram nossas dependências se sentem como se estivessem em suas casas. Essa identidade foi construída ao longo do tempo de existência da nossa clínica.</p>
             <hr>
         </section>
         <section id="servicos">
             <h2>Serviços</h2>
-            <ul type="square">
-                <li>Pilates</li>
-                <li>Salas de Atendimento Individualizado</li>
-                <li>Massoterapia</li>
-                <li>Terapia Manual</li>
-                <li>Ventosas</li>
-                <li>Manobras Miofasciais</li>
-            </ul>
+            <div class="service-buttons">
+                <a href="pilates.html">Pilates</a>
+                <a href="sala_atendimento.html">Salas de Atendimento Individualizado</a>
+                <a href="sala_massoterapia.html">Massoterapia</a>
+                <a href="terapia_manual.html">Terapia Manual</a>
+                <a href="ventosa.html">Ventosas</a>
+                <a href="miofascial.html">Manobras Miofasciais</a>
+            </div>
             <hr>
-            <section id="contato">
-                <h2>Contato</h2>
-                <p>Entre em contato conosco para agendar uma consulta ou saber mais sobre nossos serviços:</p>
-                <p>Email: <a href="mailto:fisio.coaching@hotmail.com">fisio.coaching@hotmail.com</a></p>
-                <p>
-                    <img src="fotos/logowhats.jfif" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
-                    Telefone/WhatsApp: 
-                    <a href="https://wa.me/551734632584" target="_blank">(17) 3463-2584</a>
-                </p>
-                <p>Endereço: Rua Paraiba, 842, Bairro: Água Vermelha, Cidade: Fernandópolis, Estado: São Paulo, País: Brasil</p>
-            </section>
-            <div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para agendar uma consulta ou saber mais sobre nossos serviços:</p>
+            <p>Email: <a href="mailto:fisio.coaching@hotmail.com">fisio.coaching@hotmail.com</a></p>
+            <p>
+                <img src="fotos/logowhats.jfif" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                Telefone/WhatsApp: 
+                <a href="https://wa.me/551734632584" target="_blank">(17) 3463-2584</a>
+            </p>
+            <p>Endereço: Rua Paraíba, 842, Bairro: Água Vermelha, Cidade: Fernandópolis, Estado: São Paulo, País: Brasil</p>
+        </section>
+        <div>
             <h3>Siga-nos nas redes sociais</h3> 
             <p>
                 <a href="https://www.facebook.com/clinicafisiocoaching/" target="_blank">
@@ -109,12 +129,13 @@
                     Facebook
                 </a>
             </p>
-            <a href="https://www.instagram.com/fisio.coaching/" target="_blank">
-                <img src="fotos/logoinsta.jfif" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
-                Instagram
-            </a>
+            <p>
+                <a href="https://www.instagram.com/fisio.coaching/" target="_blank">
+                    <img src="fotos/logoinsta.jfif" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    Instagram
+                </a>
+            </p>
         </div>
-        
     </div>
     <footer>
         <p>&copy; 2024 Fisio.Coaching. Todos os direitos reservados.</p>

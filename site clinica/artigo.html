@@ -20,7 +20,7 @@
         .content {
             padding: 20px;
         }
-        .article, .video {
+        .article, .video, .ebook {
             background-color: white;
             border: 1px solid #ddd;
             padding: 15px;
@@ -30,10 +30,7 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 5px 0;
         }
         .btn-link {
             margin: 0 10px; /* Espaço entre botões */
@@ -44,9 +41,14 @@
 <body>
     <header>
         <h1>FisioCoaching - Saúde e Fisioterapia</h1>
-       <a href="clinica.html" class="btn btn-primary mt-2">Página Inicial</a> 
-       <a href="photos.html" class="btn btn-primary mt-2">Fotos</a>
-        </header>
+        <a href="clinica.html" class="btn btn-primary mt-2">Página Inicial</a> 
+        <a href="photos.html" class="btn btn-primary mt-2">Fotos</a>
+    </header> 
+    <h2>Vídeos Explicativos</h2>
+        <div class="video">
+            <h4>Como se Valorizar e Crescer na área</h4>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/vscdUrh3Q0c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     <div class="container content">
         <h2>Artigos Científicos</h2>
         <div class="article">
@@ -59,11 +61,8 @@
             <p>Um guia completo sobre como a fisioterapia pode acelerar a recuperação após cirurgias...</p>
             <a href="#" class="btn btn-primary">Leia mais</a>
         </div>
-        <h2>Vídeos Explicativos</h2>
-        <div class="video">
-            <h4>Como se Valorizar e Crescer na área</h4>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/vscdUrh3Q0c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        
+       
         <div class="video">
             <h4>Técnicas de Fisioterapia para Melhorar a Qualidade de Vida</h4>
             <!-- Adicione o caminho correto do vídeo MP4 aqui -->
@@ -71,6 +70,18 @@
                 <source src="path_to_another_video.mp4" type="video/mp4">
                 Seu navegador não suporta vídeos.
             </video>
+        </div>
+        
+        <h2>E-books Gratuitos</h2>
+        <div class="ebook">
+            <h4>Guia Completo de Fisioterapia</h4>
+            <p>Baixe nosso e-book gratuito e tenha acesso a um guia completo sobre técnicas e benefícios da fisioterapia.</p>
+            <a href="https://www.amazon.com.br/dp/B08XYZ1234" class="btn btn-primary" target="_blank">Baixar na Amazon</a>
+        </div>
+        <div class="ebook">
+            <h4>Fisioterapia para Atletas</h4>
+            <p>Descubra como a fisioterapia pode ajudar no desempenho e recuperação de atletas. Baixe nosso e-book gratuito.</p>
+            <a href="https://www.amazon.com.br/dp/B08XYZ5678" class="btn btn-primary" target="_blank">Baixar na Amazon</a>
         </div>
     </div>
     <footer>
