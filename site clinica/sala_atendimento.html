@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salas de Atendimento Individualizado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,14 +41,14 @@
             margin-top: 20px;
             display: flex;
             justify-content: center;
-            gap: 20px; /* Provides space between buttons */
+            gap: 20px; /* Espaço entre os botões */
         }
         nav a.btn {
-            color: white; /* Ensures text is white */
-            text-decoration: none; /* Removes underline */
+            color: white; /* Garante que o texto seja branco */
+            text-decoration: none; /* Remove o sublinhado */
         }
         nav a.btn:hover {
-            color: black; /* Change text color on hover */
+            color: black; /* Muda a cor do texto ao passar o mouse */
         }
         footer {
             background-color: #333;
@@ -90,13 +91,53 @@
             <hr>
         </section>
         <figure>
-            <img src="fotos01/ft02.jpeg" alt="Sala de Atendimento">
-            <figcaption>Descrição detalhada da imagem da Sala de Atendimento</figcaption>
+            <a href="fotossalas/sala1.jpeg" class="popup-link">
+                <img src="fotossalas/sala1.jpeg" alt="Sala de Atendimento">
+            </a>
+            <figcaption>de Exercicios e Terapia Manual</figcaption>
+        </figure>
+        <figure>
+            <a href="fotossalas/sala2.jpeg" class="popup-link">
+                <img src="fotossalas/sala2.jpeg" alt="Sala de Atendimento">
+            </a>
+            <figcaption>Maca de RPG Sala ClimatizadaSala</figcaption>
+        </figure>
+        <figure>
+            <a href="fotossalas/sala5.jpeg" class="popup-link">
+                <img src="fotossalas/sala5.jpeg" alt="Sala de Atendimento">
+            </a>
+            <figcaption>Atendimento Massoterapia Relaxamento sala Climatizada</figcaption>
+        </figure>
+        <figure>
+            <a href="fotossalas/consutorio1.jpeg" class="popup-link">
+                <img src="fotossalas/consutorio1.jpeg" alt="Sala de Atendimento">
+            </a>
+            <figcaption>Atendimento Avaliação</figcaption>
+        </figure>
+        <figure>
+            <a href="fotossalas/consultório2.jpeg" class="popup-link">
+                <img src="fotossalas/consultório2.jpeg" alt="Sala de Atendimento">
+            </a>
+            <figcaption>Atendimento Avaliação Atendimento Médico</figcaption>
         </figure>
         <!-- Adicione mais imagens aqui -->
     </div>
     <footer>
         <p>&copy; 2024 FisioCoaching. Todos os direitos reservados.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.popup-link').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true // Habilita a navegação em galeria
+                },
+                mainClass: 'mfp-fade', // Adiciona uma transição de fade
+                removalDelay: 300 // Tempo de delay para a animação
+            });
+        });
+    </script>
 </body>
 </html>
